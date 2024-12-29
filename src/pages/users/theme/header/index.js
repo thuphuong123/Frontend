@@ -16,7 +16,7 @@ const Header = () => {
     { name: "About", path: ROUTERS.USER.ABOUTUS },
     { name: "Pricing", path: ROUTERS.USER.PRICING },
     { name: "Contact", path: ROUTERS.USER.CONTACT },
-    { name: "Blog", path: ROUTERS.USER.Blog },
+    { name: "Blog", path: ROUTERS.USER.BLOG },
   ]);
 
   const toggleUserMenu = () => {

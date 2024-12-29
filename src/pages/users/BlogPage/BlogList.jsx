@@ -1,49 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Heading, Text, Button, VStack, HStack } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { useState } from 'react'
+import { BlogPost } from './mockDatabase'
+import { Card, CardContent, CardHeader, CardActions, Button } from '@mui/material';
+import { Comment as CommentIcon } from '@mui/icons-material'
+import CommentForm from './CommentForm'
 
-interface BlogPost {
-  id: number;
-  title: string;
-  content: string;
-  author: string;
+interface BlogListProps {
+  posts: BlogPost[];
+  onNewComment: (postId: number, author: string, content: string) => void;
 }
 
-const BlogList: React.FC = () => {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
+export default function BlogList({ posts, onNewComment }: BlogListProps) {
+  return (
+    <div className="space-y-8">
+      <h2 className="text-2xl font-bold text-blue-800">Recent Blog Posts</h2>
+      {posts.map((post) => (
+        <BlogPostItem key={post.id} post={post} onNewComment={onNewComment} />
+      ))}
+    </div>
+  )
+}
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get<BlogPost[]>('/api/posts');
-        setPosts(response.data);
-      } catch (error) {
-        console.error('Error fetching posts:', error);
-      }
-    };
-    fetchPosts();
-  }, []);
+function BlogPostItem({ post, onNewComment }: { post: BlogPost; onNewComment: (postId: number, author: string, content: string) => void }) {
+  const [isCommentsVisible, setIsCommentsVisible] = useState(false)
 
   return (
-    <Box maxWidth="800px" margin="auto" padding={4}>
-      <Heading as="h1" mb={4}>Blog Posts</Heading>
-      <Button as={Link} to="/new" colorScheme="blue" mb={4}>Create New Post</Button>
-      <VStack spacing={4} align="stretch">
-        {posts.map((post) => (
-          <Box key={post.id} borderWidth={1} borderRadius="lg" p={4}>
-            <Heading as="h2" size="md">{post.title}</Heading>
-            <Text>{post.content.substring(0, 100)}...</Text>
-            <Text fontStyle="italic">By: {post.author || 'Anonymous'}</Text>
-            <HStack mt={2}>
-              <Button as={Link} to={`/blog/${post.id}`} colorScheme="teal">View Details</Button>
-            </HStack>
-          </Box>
-        ))}
-      </VStack>
-    </Box>
-  );
-};
-
-export default BlogList;
-
+    <Card>
+      <CardHeader
+        title={post.title}
+        subheader={`By: ${post.author} | ${post.createdAt.toLocaleDateString()}`}
+      />
+      <CardContent>
+        {post.imageUrl && (
+          <img src={post.imageUrl} alt={post.title} className="mb-4 max-h-48 w-full object-cover rounded" />
+        )}
+        <p className="text-gray-700 line-clamp-3">{post.content}</p>
+      </CardContent>
+      <CardActions>
+        <Button
+          variant="outlined"
+          onClick={() => setIsCommentsVisible(!isCommentsVisible)}
+        >
+          <CommentIcon className="mr-2 h-5 w-5" />
+          Comments ({post.comments.length})
+        </Button>
+      </CardActions>
+      {isCommentsVisible && (
+        <CardContent>
+          <h4 className="font-semibold mb-2">Comments</h4>
+          {post.comments.length === 0 ? (
+            <p className="text-gray-500">No comments yet.</p>
+          ) : (
+            <ul className="space-y-2 mb-4">
+              {post.comments.map((comment) => (
+                <li key={comment.id} className="bg-gray-50 p-2 rounded">
+                  <p className="text-sm text-gray-500">{comment.author}</p>
+                  <p>{comment.content}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+          <CommentForm postId={post.id} onSubmit={onNewComment} />
+        </CardContent>
+      )}
+    </Card>
+  )
+}
