@@ -1,0 +1,199 @@
+@use "sass:map";
+@import "/src/style/pages/theme";
+.ContactSection {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.Form {
+  flex: 1;
+  padding: 40px;
+}
+
+.Form h2 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #243a53;
+}
+
+.FormElements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.FormField {
+  flex: 1 1 280px;
+  margin-bottom: 20px;
+}
+
+.FormField label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #243a53;
+}
+
+.FormField input,
+.FormField textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.FormField input:focus,
+.FormField textarea:focus {
+  border-color: #999;
+}
+
+.FormField textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.Form button {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+
+  background-color: map.get($theme-color, "main");
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Form button:hover {
+  background-color: #0069d9;
+}
+
+.ContactInformation {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.ContactInformation h2 {
+  margin: 0 0 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #243a53;
+}
+
+.ContactInformation div {
+  margin-bottom: 20px;
+}
+
+.ContactInformation a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.ContactInformation a:hover {
+  color: #0069d9;
+}
+.buttons-container {
+  width: 520px;
+  height: 929px;
+  padding: 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.button {
+  width: 100%;
+  flex: 1 1 0;
+  padding: 30px;
+  background: #fcfcfd;
+  border-radius: 8px;
+  border: 1px #f1f1f3 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-inner {
+  padding: 14px;
+  background: #f7f7f8;
+  border-radius: 8px;
+  border: 1px #f1f1f3 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  color: #4c4c4d;
+  font-size: 18px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.social-profiles {
+  align-self: stretch;
+  flex: 1 1 0;
+  padding: 30px;
+  background: #fcfcfd;
+  border-radius: 8px;
+  border: 1px #f1f1f3 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-buttons .button {
+  padding: 10px; /* Adjust padding for social buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3; /* Ensure consistency in border */
+}

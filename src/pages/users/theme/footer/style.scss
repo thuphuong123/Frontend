@@ -1,0 +1,71 @@
+@use "sass:map";
+@import "/src/style/pages/theme";
+
+.footer_bot {
+  font-size: 1vw;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+.footer_home,
+.footer_about {
+}
+
+.ul-footer-home a {
+  color: #848482;
+}
+.ul-footer-home a:hover {
+  color: map.get($theme-click-btn, "hover");
+}
+
+.ul-footer-home a:active {
+  color: map.get($theme-click-btn, "active");
+}
+
+.ul-footer-about a {
+  color: #848482;
+}
+
+.ul-footer-about a:hover {
+  color: map.get($theme-click-btn, "hover");
+}
+
+.ul-footer-about a:active {
+  color: map.get($theme-click-btn, "active");
+}
+
+.ul-footer-social {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  //justify-content: center;
+}
+
+.footer_copyright {
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 100px;
+}
+
+.col {
+  flex: 1;
+}
+.footer_copyright {
+  padding-top: 100px;
+}
+
+.custom-hr {
+  width: 50%;
+  color: gray;
+  margin: auto;
+}
+.mail {
+  color: black;
+}

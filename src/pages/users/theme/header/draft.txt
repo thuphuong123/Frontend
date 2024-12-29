@@ -1,0 +1,48 @@
+//   max-width: 1920px;
+  //   width: 100%;
+  //   height: 55px;
+  //   padding-top: 14px;
+  //   padding-bottom: 14px;
+  //   background: map.get($theme-color, "main");
+  //   border-radius: 8px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 23px;
+  //   display: inline-flex;
+  //   margin: auto;
+  //   color: white;
+  //   font-size: 18px;
+  //   font-family: "Be Vietnam Pro", sans-serif;
+  //   font-weight: 400;
+
+
+  !<div className="HeaderComponent" style={{width: 1860, height: 154, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+    <div className="TopBanner" style={{alignSelf: 'stretch', paddingTop: 14, paddingBottom: 14, background: '#87A2FF', borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 23, display: 'inline-flex'}}>
+      <div className="Text" style={{color: 'white', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Get It Now</div>
+      <div className="Icon" style={{width: 24, height: 24, paddingLeft: 3.60, paddingRight: 3.60, paddingTop: 4.80, paddingBottom: 4.80, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+        <div className="VectorStroke" style={{width: 14.40, height: 16.80, transform: 'rotate(-90deg)', transformOrigin: '0 0', background: 'white'}}></div>
+      </div>
+    </div>
+    <div className="Navbar" style={{alignSelf: 'stretch', paddingTop: 20, paddingBottom: 24, paddingLeft: 132, paddingRight: 132, borderBottom: '1px #F1F1F3 solid', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+      <div className="Container" style={{justifyContent: 'flex-start', alignItems: 'center', gap: 50, display: 'flex'}}>
+        <div className="Logo" style={{width: 54, height: 54, padding: 7, background: '#87A2FF', borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+          <div className="Shape17" style={{flex: '1 1 0', alignSelf: 'stretch', paddingTop: 4.17, paddingBottom: 3.33, paddingLeft: 4.17, paddingRight: 3.33, justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
+            <div className="Shape17" style={{width: 32.50, height: 32.50, background: 'white'}}></div>
+          </div>
+        </div>
+        <div className="ButtonsContainer" style={{justifyContent: 'flex-start', alignItems: 'center', gap: 26, display: 'flex'}}>
+          <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Home</div>
+          <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Courses</div>
+          <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>About Us</div>
+          <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Pricing</div>
+          <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Contact</div>
+        </div>
+      </div>
+      <div className="ButtonsContainer" style={{justifyContent: 'flex-start', alignItems: 'center', gap: 30, display: 'flex'}}>
+        <div className="Text" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Sign Up</div>
+        <div className="Button" style={{paddingLeft: 34, paddingRight: 34, paddingTop: 14, paddingBottom: 14, background: '#87A2FF', borderRadius: 8, justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
+          <div className="Text" style={{color: 'white', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Login</div>
+        </div>
+      </div>
+    </div>
+  </div>

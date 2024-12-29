@@ -1,0 +1,248 @@
+@use "sass:map";
+@import "/src/style/pages/theme";
+
+.row-banner {
+  background: map.get($theme-color, "main");
+  border-radius: 8px;
+  padding: 1.5vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  .icon {
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow-icon {
+      width: 2.5vw;
+      height: 2.5vw;
+      color: white;
+      transform: rotate(360deg);
+    }
+  }
+
+  .text {
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 2vw;
+    word-wrap: break-word;
+  }
+}
+//~~~~~~~~~~~~~~~
+.row-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 5vw;
+  border-bottom: 1px solid #f1f1f3;
+
+  .header_top_left {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    .logo {
+      padding: 1vw;
+
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-menu {
+      gap: 2vw;
+    }
+
+    .header-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 2vw;
+    }
+
+    .header-menu li {
+    }
+
+    .header-menu a {
+      color: #262626;
+      font-size: 1vw;
+      font-weight: 400;
+      line-height: 2vw;
+      padding: 15px 20px;
+      margin: 5px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: map.get($theme-font, "main"), sans-serif;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header-menu a:hover {
+      color: #ffffff;
+      background-color: map.get($theme-color, "sub-main");
+    }
+
+    .header-menu a.active {
+      color: #ffffff;
+      background-color: map.get($theme-color, "main");
+    }
+  }
+
+  .header_top_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 1vw;
+
+    .signup-btn {
+      color: #262626;
+      font-size: 1.2vw;
+      background: none;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    .login-btn {
+      background: map.get($theme-color, "main");
+      color: white;
+      padding: 1vw 2vw;
+      font-size: 1.2vw;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 8px;
+      &:hover {
+        background-color: map.get($theme-color, "sub-main");
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .row-navbar {
+    flex-direction: column;
+    padding: 5vw 2vw;
+    text-align: center;
+
+    .header_top_left,
+    .header_top_right {
+      flex-direction: column;
+      gap: 1vw;
+    }
+
+    .header-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+    }
+
+    .header-menu a {
+      font-size: 1.2vw;
+      padding: 1vw 2vw;
+    }
+
+    .header-menu a.active {
+      color: #ffffff;
+      background-color: map.get($theme-color, "main");
+    }
+  }
+
+  .row-banner {
+    padding: 4vw 0;
+    gap: 2vw;
+
+    .icon,
+    .arrow-icon {
+      width: 3vw;
+      height: 3vw;
+    }
+
+    .text {
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+  }
+}
+
+.user-menu {
+  position: absolute;
+  //top: 40px;
+  //bottom: 1px;
+  right: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.user-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.user-menu-item {
+  display: block;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.user-menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+.logout-btn {
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.logout-btn:hover {
+  color: #e60000;
+}
+
+.welcome-user {
+  background: map.get($theme-color, "main");
+  color: white;
+  padding: 1vw 2vw;
+  font-size: 1.2vw;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  &:hover {
+    background-color: map.get($theme-color, "sub-main");
+  }
+}

@@ -1,0 +1,278 @@
+<hr className="custom-hr" />
+
+      <div className="container">
+        {/* <div className="footer"></div> */}
+        <div className="">
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="footer_about">
+                <h1 className="logo">
+                  <img src={Logo} alt="This is a Logo" />
+                </h1>
+                <ul className="ul-firstdiv">
+                  <li>
+                    <IoMail />
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=pathcarrer746@gmail.com"
+                      className="mail"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      pathcarrer746@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <FaPhone />
+                    +84 123456789
+                  </li>
+                  <li>
+                    <FaLocationDot />
+                    Da Nang, Viet Nam
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3"></div>
+            <div className="col-lg-3">
+              <h3>Home</h3>
+              <ul className="ul-footer">
+                {HomeMenus.map((menu, menuKey) => (
+                  <li className="li-footer" key={menuKey}>
+                    <NavLink
+                      to={menu.path}
+                      className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                      {menu.name}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col-lg-3">
+              <h3>About Us</h3>
+              <ul className="ul-footer">
+                {AboutMenus.map((menu, menuKey) => (
+                  <li className="li-footer" key={menuKey}>
+                    <NavLink
+                      to={menu.path}
+                      className={({ isActive }) => (isActive ? "active" : "")}
+                    >
+                      {menu.name}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col-lg-3">
+              <h3>Social Profiles</h3>
+              <div className="logo">
+                {socialProfiles.map((profile, index) => (
+                  <a
+                    key={index}
+                    href={profile.url}
+                    // target="_blank"
+                    // rel="noopener noreferrer"
+                    // aria-label={profile.name}
+                  >
+                    {profile.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer_copyright">
+          &copy; 2024 CarrerPath. All rights reserved.
+        </div>
+      </div>
+
+
+
+
+
+      //css
+      // .footer {
+        //   display: flex;
+        //   flex-wrap: wrap;
+        //   justify-content: center; // Căn giữa theo chiều ngang
+        //   align-items: flex-start;
+        //   padding: 40px 20px;
+        //   background-color: #f8f9fa; // Light background for better visibility
+        //   color: #343a40; // Dark text for contrast
+        //   max-width: 1200px; // Giới hạn chiều rộng cho việc căn giữa tốt hơn
+        //   margin: 0 auto; // Để căn giữa theo chiều ngang
+        
+        //   // Responsive styles for smaller screens
+        //   @media (max-width: 768px) {
+        //     flex-direction: column;
+        //     align-items: center;
+        //   }
+        // }
+        
+        li {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        .footer_copyright {
+          text-align: center;
+          padding-top: 100px;
+          font-size: 1vw;
+        }
+        
+        // .container {
+        //   align-self: stretch;
+        //   justify-content: space-between;
+        //   align-items: flex-start;
+        // }
+        
+        .footer_about {
+        }
+        
+        .ul-footer a {
+          text-decoration: none;
+          color: #848482;
+          font-size: 1vw;
+        }
+        
+        .ul-footer a:hover {
+          color: map.get($theme-click-btn, "hover");
+        }
+        
+        .ul-footer a:active {
+          color: map.get($theme-click-btn, "active");
+        }
+        
+        .li-footer {
+        }
+        
+        .logo {
+          margin-bottom: 10px;
+        }
+        
+        .logo a {
+          font-size: 2vw;
+          transition: transform 0.3s;
+        }
+        
+        .logo a:hover {
+          transform: scale(1.1);
+        }
+        
+        .ul-firstdiv {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-size: 1vw;
+        }
+        
+        .ul-firstdiv li {
+          display: flex; /* Sử dụng flexbox */
+          align-items: center; /* Căn giữa theo chiều dọc */
+          margin-bottom: 8px; /* Khoảng cách giữa các phần tử li */
+        }
+        
+        .ul-firstdiv li .icon {
+          margin-right: 8px; /* Khoảng cách giữa icon và text */
+        }
+        
+        .mail {
+          color: black;
+        }
+        
+        .custom-hr {
+          width: 70%;
+          margin: auto;
+        }
+        
+        // .footer_about,
+        // .ul-footer,
+        // .footer_copyright {
+        //   text-align: center; // Căn giữa nội dung trong từng khối
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="FooterComponent" style={{width: 1920, height: 472, paddingTop: 100, paddingBottom: 30, paddingLeft: 162, paddingRight: 162, background: 'white', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 50, display: 'inline-flex'}}>
+          <div className="Container" style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'flex-start', display: 'inline-flex'}}>
+            <div className="SubContainer" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 40, display: 'inline-flex'}}>
+              <div className="Logo" style={{width: 54, height: 54, position: 'relative', background: '#87A2FF', borderRadius: 8, overflow: 'hidden'}}>
+                <div className="Shape17" style={{width: 40, height: 40, left: 7, top: 7, position: 'absolute'}}>
+                  <div className="Shape17" style={{width: 32.50, height: 32.50, left: 4.17, top: 4.17, position: 'absolute', background: 'white'}}></div>
+                </div>
+              </div>
+              <div className="ButtonsContainer" style={{width: 392, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 20, display: 'inline-flex'}}>
+                <div className="Button" style={{borderRadius: 6, justifyContent: 'flex-start', alignItems: 'center', gap: 6, display: 'flex'}}>
+                  <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                    <div className="Subtract" style={{width: 21, height: 16.50, left: 1.50, top: 3.75, position: 'absolute', background: '#262626'}}></div>
+                  </div>
+                  <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>email@gmail.com</div>
+                </div>
+                <div className="Button" style={{borderRadius: 6, justifyContent: 'flex-start', alignItems: 'center', gap: 6, display: 'flex'}}>
+                  <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                    <div className="VectorStroke" style={{width: 21, height: 21, left: 1.50, top: 1.50, position: 'absolute', background: '#262626'}}></div>
+                  </div>
+                  <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>+84 12345678910</div>
+                </div>
+                <div className="Button" style={{borderRadius: 6, justifyContent: 'flex-start', alignItems: 'center', gap: 6, display: 'flex'}}>
+                  <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                    <div className="Subtract" style={{width: 16.50, height: 20.25, left: 3.75, top: 2.25, position: 'absolute', background: '#262626'}}></div>
+                  </div>
+                  <div className="TextButton" style={{color: '#262626', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Da Nang, Viet Nam</div>
+                </div>
+              </div>
+            </div>
+            <div className="SubContainer" style={{height: 203, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 30, display: 'flex'}}>
+              <div className="Container" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 14, display: 'inline-flex'}}>
+                <div className="Heading" style={{alignSelf: 'stretch', color: '#262626', fontSize: 20, fontFamily: 'Be Vietnam Pro', fontWeight: '600', lineHeight: 30, wordWrap: 'break-word'}}>Home</div>
+                <div className="ButtonsContainer" style={{alignSelf: 'stretch', height: 159, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Benefits</div>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Our Service</div>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Our Pricing</div>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>News and Blogs<br/>Our FAQ</div>
+                </div>
+              </div>
+              <div className="Container" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 14, display: 'inline-flex'}}>
+                <div className="Heading" style={{alignSelf: 'stretch', color: '#262626', fontSize: 20, fontFamily: 'Be Vietnam Pro', fontWeight: '600', lineHeight: 30, wordWrap: 'break-word'}}>About Us</div>
+                <div className="ButtonsContainer" style={{alignSelf: 'stretch', height: 97, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'flex'}}>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Company</div>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Achievements</div>
+                  <div className="TextButton" style={{alignSelf: 'stretch', color: '#59595A', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>Our Goals</div>
+                </div>
+              </div>
+              <div className="Container" style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 14, display: 'inline-flex'}}>
+                <div className="Heading" style={{alignSelf: 'stretch', color: '#262626', fontSize: 20, fontFamily: 'Be Vietnam Pro', fontWeight: '600', lineHeight: 30, wordWrap: 'break-word'}}>Social Profiles</div>
+                <div className="ButtonsContainer" style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 14, display: 'inline-flex'}}>
+                  <div className="Button" style={{padding: 14, background: '#F7F7F8', borderRadius: 8, border: '1px #F1F1F3 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'inline-flex'}}>
+                    <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                      <div className="Vector" style={{width: 24, height: 23.85, left: 0, top: 0, position: 'absolute', background: '#333333'}}></div>
+                    </div>
+                  </div>
+                  <div className="Button" style={{padding: 14, background: '#F7F7F8', borderRadius: 8, border: '1px #F1F1F3 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'inline-flex'}}>
+                    <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                      <div className="Vector" style={{width: 24, height: 19.50, left: -0, top: 2.25, position: 'absolute', background: '#333333'}}></div>
+                    </div>
+                  </div>
+                  <div className="Button" style={{padding: 14, background: '#F7F7F8', borderRadius: 8, border: '1px #F1F1F3 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'inline-flex'}}>
+                    <div className="Icon" style={{width: 24, height: 24, position: 'relative'}}>
+                      <div className="Vector" style={{width: 24, height: 24, left: 0, top: 0, position: 'absolute', background: '#333333'}}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Line" style={{alignSelf: 'stretch', height: 0, border: '1px #F1F1F3 solid'}}></div>
+          <div className="Text" style={{alignSelf: 'stretch', textAlign: 'center', color: '#656567', fontSize: 18, fontFamily: 'Be Vietnam Pro', fontWeight: '400', lineHeight: 27, wordWrap: 'break-word'}}>© 2024 by C1SE.52</div>
+        </div>
