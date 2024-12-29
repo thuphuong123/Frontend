@@ -1137,95 +1137,10 @@ const HomePage = memo(() => {
                     alt="Icon1407"
                     src="./external/icon1407-0u7.svg"
                     className="home-page-desktop-english-icon36"
-                  />
-                  <span className="home-page-desktop-english-text346">
-                    <span>email@gmail.com</span>
-                  </span>
-                </button>
-                <button className="home-page-desktop-english-button43">
-                  <img
-                    alt="Icon1411"
-                    src="./external/icon1411-whli.svg"
-                    className="home-page-desktop-english-icon37"
-                  />
-                  <span className="home-page-desktop-english-text348">
-                    <span>+84 12345678910</span>
-                  </span>
-                </button>
-                <button className="home-page-desktop-english-button44">
-                  <img
-                    alt="Icon1415"
-                    src="./external/icon1415-qgci.svg"
-                    className="home-page-desktop-english-icon38"
-                  />
-                  <span className="home-page-desktop-english-text350">
-                    <span> Da Nang, Viet Nam </span>
-                  </span>
+                  />                         
                 </button>
               </button>
-            </div>
-            <div className="home-page-desktop-english-container62">
-              <span className="home-page-desktop-english-text352">
-                <span> About Us </span>
-              </span>
-              <button className="home-page-desktop-english-buttons-container6">
-                <span className="home-page-desktop-english-text354">
-                  <span> Company </span>
-                </span>
-                <span className="home-page-desktop-english-text356">
-                  <span> Achievements </span>
-                </span>
-                <span className="home-page-desktop-english-text358">
-                  <span> Our Goals </span>
-                </span>
-              </button>
-            </div>
-            <span className="home-page-desktop-english-text360">
-              <span> News and Blogs </span>
-              <br></br>
-              <span> Our FAQ </span>
-            </span>
-            <div className="home-page-desktop-english-container63">
-              <span className="home-page-desktop-english-text364">
-                <span> Social Profiles </span>
-              </span>
-              <button className="home-page-desktop-english-buttons-container7">
-                <button className="home-page-desktop-english-button45">
-                  <img
-                    alt="Icon1436"
-                    src="./external/icon1436-kmok.svg"
-                    className="home-page-desktop-english-icon39"
-                  />
-                </button>
-                <button className="home-page-desktop-english-button46">
-                  <img
-                    alt="Icon1439"
-                    src="./external/icon1439-job6.svg"
-                    className="home-page-desktop-english-icon40"
-                  />
-                </button>
-                <button className="home-page-desktop-english-button47">
-                  <img
-                    alt="Icon1442"
-                    src="./external/icon1442-r6nk.svg"
-                    className="home-page-desktop-english-icon41"
-                  />
-                </button>
-              </button>
-            </div>
-            <div className="home-page-desktop-english-container64">
-              <div className="home-page-desktop-english-container65">
-                <div className="home-page-desktop-english-sub-container31"></div>
-              </div>
-            </div>
-            <img
-              alt="Line1444"
-              src="./external/line1444-smn9.svg"
-              className="home-page-desktop-english-line20"
-            />
-            <span className="home-page-desktop-english-text366">
-              <span> © 2024 by C1SE.52 </span>
-            </span>
+            </div>           
           </div>
         </div>
       </div>

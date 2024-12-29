@@ -33,13 +33,13 @@
 }
 
 .home-page-desktop-english-icon10 {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .home-page-desktop-english-navbar {
   gap: 552px;
-  width: 731px;
+  width: 700px;
   display: flex;
   padding: 20px 132px 24px;
   align-self: stretch;
@@ -60,8 +60,8 @@
 }
 
 .home-page-desktop-english-logo1 {
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -161,7 +161,7 @@
 
 .home-page-desktop-english-home-page-desktop-english {
   width: 100%;
-  height: 10350px;
+  height: 10300px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -174,7 +174,7 @@
   gap: 60px;
   top: 291px;
   right: 168px;
-  width: 965px;
+  width: 900px;
   display: flex;
   position: absolute;
   align-items: center;
@@ -321,9 +321,9 @@
 }
 .home-page-desktop-english-container13 {
   gap: 10px;
-  top: 971px;
-  left: -32px;
-  width: 1221px;
+  top: 977px;
+  left: -6px;
+  width: 956px;
   height: 790px;
   display: flex;
   padding: 100px;
@@ -409,7 +409,7 @@
   gap: 80px;
   top: 1981px;
   left: 3px;
-  width: 1390px;
+  width: 1200px;
   display: flex;
   position: absolute;
   align-items: flex-end;
@@ -498,7 +498,7 @@
 }
 .home-page-desktop-english-card10 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -572,7 +572,7 @@
 }
 .home-page-desktop-english-card11 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -646,7 +646,7 @@
 }
 .home-page-desktop-english-card12 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -727,7 +727,7 @@
 }
 .home-page-desktop-english-card13 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -801,7 +801,7 @@
 }
 .home-page-desktop-english-card14 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -875,7 +875,7 @@
 }
 .home-page-desktop-english-card15 {
   gap: 50px;
-  width: 450px;
+  width: 380px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1016,7 +1016,7 @@
 }
 .home-page-desktop-english-card16 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1182,7 +1182,7 @@
 }
 .home-page-desktop-english-card17 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1354,7 +1354,7 @@
 }
 .home-page-desktop-english-card18 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1520,7 +1520,7 @@
 }
 .home-page-desktop-english-card19 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1692,7 +1692,7 @@
 }
 .home-page-desktop-english-card20 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -1858,7 +1858,7 @@
 }
 .home-page-desktop-english-card21 {
   gap: 30px;
-  width: 650px;
+  width: 540px;
   display: flex;
   padding: 50px;
   flex-grow: 1;
@@ -2025,7 +2025,7 @@
   gap: 80px;
   top: 6023px;
   left: -2px;
-  width: 1390px;
+  width: 1200px;
   display: flex;
   position: absolute;
   align-items: flex-end;
@@ -2113,7 +2113,7 @@
   flex-shrink: 0;
 }
 .home-page-desktop-english-card22 {
-  width: 650px;
+  width: 550px;
   display: flex;
   overflow: hidden;
   flex-grow: 1;
@@ -2211,7 +2211,7 @@
   text-decoration: none;
 }
 .home-page-desktop-english-card23 {
-  width: 650px;
+  width: 550px;
   display: flex;
   overflow: hidden;
   flex-grow: 1;
@@ -2317,7 +2317,7 @@
   flex-shrink: 0;
 }
 .home-page-desktop-english-card24 {
-  width: 650px;
+  width: 550px;
   display: flex;
   overflow: hidden;
   flex-grow: 1;
@@ -2416,7 +2416,7 @@
   text-decoration: none;
 }
 .home-page-desktop-english-card25 {
-  width: 650px;
+  width: 550px;
   display: flex;
   overflow: hidden;
   flex-grow: 1;
@@ -2518,7 +2518,7 @@
   gap: 80px;
   top: 6960px;
   left: 2px;
-  width: 1390px;
+  width: 1190px;
   display: flex;
   position: absolute;
   align-items: flex-end;
@@ -2578,7 +2578,7 @@
 }
 .home-page-desktop-english-card26 {
   gap: 50px;
-  width: 650px;
+  width: 550px;
   display: flex;
   padding: 50px 30px 30px;
   flex-grow: 1;
@@ -2604,6 +2604,8 @@
   border-radius: 6px;
   justify-content: center;
   background-color: var(--dl-color-default-c4d7ff);
+  width: 462px;
+  height: 65px;
 }
 .home-page-desktop-english-text278 {
   color: var(--dl-color-grey-15);
@@ -2932,7 +2934,7 @@
 }
 .home-page-desktop-english-card27 {
   gap: 50px;
-  width: 650px;
+  width: 550px;
   display: flex;
   padding: 50px 30px 30px;
   flex-grow: 1;
@@ -2944,6 +2946,7 @@
   border-radius: 12px;
   flex-direction: column;
   background-color: var(--dl-color-white-99);
+  height: 1063px;
 }
 .home-page-desktop-english-container56 {
   gap: 10px;
@@ -3249,7 +3252,7 @@
 .home-page-desktop-english-faq-section {
   gap: 120px;
   left: 4px;
-  width: 1390px;
+  width: 1200px;
   bottom: 611px;
   display: flex;
   padding: 100px;
@@ -3269,6 +3272,7 @@
 }
 .home-page-desktop-english-text-container29 {
   gap: 10px;
+  width: 566px;
   display: flex;
   align-self: stretch;
   align-items: flex-start;
@@ -3585,9 +3589,9 @@
   height: 28px;
 }
 .home-page-desktop-english-frame {
-  top: 716px;
-  left: -5px;
-  width: 1400px;
+  top: 728px;
+  left: 14px;
+  width: 1161px;
   display: flex;
   padding: 30px;
   position: absolute;
@@ -3910,7 +3914,7 @@
 }
 .home-page-desktop-english-container62 {
   gap: 14px;
-  width: 249px;
+  width: 200px;
   display: flex;
   flex-grow: 1;
   align-items: flex-start;
@@ -3991,7 +3995,7 @@
 }
 .home-page-desktop-english-container63 {
   gap: 14px;
-  width: 258px;
+  width: 200px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
@@ -4028,8 +4032,8 @@
   background-color: var(--dl-color-white-97);
 }
 .home-page-desktop-english-icon39 {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 .home-page-desktop-english-button46 {
   gap: 10px;
@@ -4044,8 +4048,8 @@
   background-color: var(--dl-color-white-97);
 }
 .home-page-desktop-english-icon40 {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 .home-page-desktop-english-button47 {
   gap: 10px;
@@ -4060,8 +4064,8 @@
   background-color: var(--dl-color-white-97);
 }
 .home-page-desktop-english-icon41 {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 .home-page-desktop-english-container64 {
   flex: 0 0 auto;
@@ -4073,7 +4077,7 @@
 }
 .home-page-desktop-english-container65 {
   gap: 619px;
-  width: 271px;
+  width: 200px;
   display: flex;
   align-self: stretch;
   align-items: flex-start;
@@ -4082,14 +4086,14 @@
 }
 .home-page-desktop-english-sub-container31 {
   gap: 30px;
-  width: 807px;
+  width: 750px;
   border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
 }
 .home-page-desktop-english-line20 {
-  width: 1596px;
+  width: 1500px;
   height: 1px;
   align-self: stretch;
 }
